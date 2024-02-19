@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.8 on win32)" generated="2024-02-20T00:00:21.278292" rpa="false" schemaversion="5">
+<suite id="s1" name="Bw" source="C:\Users\DELL\PycharmProjects\PythonProject\BooksWagon\bw.robot">
+<test id="s1-t1" name="Login to bookswagon" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-20T00:00:21.523536" level="INFO">Opening browser 'Chrome' to base url 'https://www.bookswagon.com/login'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-20T00:00:21.523536" elapsed="6.356067"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-20T00:00:27.879603" elapsed="0.153085"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-20T00:00:28.033863" level="INFO">Typing text '7667242501' into text field 'id=ctl00_phBody_SignIn_txtEmail'.</msg>
+<arg>id=ctl00_phBody_SignIn_txtEmail</arg>
+<arg>7667242501</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T00:00:28.032688" elapsed="0.191893"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-20T00:00:28.225955" level="INFO">Typing text 'Pass@12345' into text field 'id=ctl00_phBody_SignIn_txtPassword'.</msg>
+<arg>id=ctl00_phBody_SignIn_txtPassword</arg>
+<arg>Pass@12345</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T00:00:28.225955" elapsed="0.109176"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-20T00:00:28.337125" level="INFO">Clicking element '//a[text()='Login']'.</msg>
+<arg>//a[text()='Login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T00:00:28.336129" elapsed="0.164174"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-20T00:00:28.501550" level="INFO">Typing text 'RAHASYA THE SECRET' into text field 'xpath://input[@placeholder='Title, Author, Publisher or ISBN']'.</msg>
+<arg>xpath://input[@placeholder='Title, Author, Publisher or ISBN']</arg>
+<arg>RAHASYA THE SECRET</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T00:00:28.500303" elapsed="0.939531"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-02-20T00:00:29.439834" level="INFO">Clicking button 'xpath://input[@name='btnTopSearch']'.</msg>
+<arg>xpath://input[@name='btnTopSearch']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T00:00:29.439834" elapsed="1.822729"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-20T00:00:31.263596" level="INFO">Clicking element 'xpath=//*[@id="listSearchResult"]/div[1]/div[4]/div[4]/input[1]'.</msg>
+<arg>xpath=//*[@id="listSearchResult"]/div[1]/div[4]/div[4]/input[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T00:00:31.263596" elapsed="0.111488"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-20T00:00:31.376080" level="INFO">Clicking element 'xpath=//*[@id="aspnetForm"]/header/div[1]/div/div[3]/ul/li[2]/a/span'.</msg>
+<arg>xpath=//*[@id="aspnetForm"]/header/div[1]/div/div[3]/ul/li[2]/a/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T00:00:31.376080" elapsed="1.254777"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-20T00:00:32.632136" level="INFO">Clicking element 'xpath=//*[@id="ctl00_phBody_BookCart_lvCart_imgPayment"]'.</msg>
+<arg>xpath=//*[@id="ctl00_phBody_BookCart_lvCart_imgPayment"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T00:00:32.632136" elapsed="0.102912"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-20T00:00:37.750613" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-20T00:00:32.739520" elapsed="5.011093"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-20T00:00:37.751634" level="INFO">Clicking element 'xpath=//input[@id='ctl00_cpBody_lvCustomerAdd_ctrl0_btnUseAddress']'.</msg>
+<arg>xpath=//input[@id='ctl00_cpBody_lvCustomerAdd_ctrl0_btnUseAddress']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T00:00:37.751634" elapsed="0.610368"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-20T00:00:38.364458" level="INFO">Clicking element 'xpath=//input[@id='ctl00_cpBody_ShoppingCart_lvCart_savecontinue']'.</msg>
+<arg>xpath=//input[@id='ctl00_cpBody_ShoppingCart_lvCart_savecontinue']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T00:00:38.363388" elapsed="0.837626"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-20T00:00:39.201647" level="INFO">Clicking element 'xpath=//input[@id='ctl00_cpBody_btnRazorpay']'.</msg>
+<arg>xpath=//input[@id='ctl00_cpBody_btnRazorpay']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T00:00:39.201647" elapsed="2.474488"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-02-20T00:00:41.678358" level="INFO">Executing JavaScript:
+window.scrollTo(0,900)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,900)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-02-20T00:00:41.677355" elapsed="0.004869"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-20T00:01:41.683660" level="INFO">Slept 1 minute.</msg>
+<arg>60s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-20T00:00:41.683219" elapsed="60.000441"/>
+</kw>
+<status status="PASS" start="2024-02-20T00:00:21.522617" elapsed="80.163043"/>
+</test>
+<status status="PASS" start="2024-02-20T00:00:21.281511" elapsed="80.407138"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Bw">Bw</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
