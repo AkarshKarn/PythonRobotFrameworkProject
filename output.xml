@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.8 on win32)" generated="2024-02-19T23:53:45.726857" rpa="false" schemaversion="5">
+<suite id="s1" name="fbLogin" source="C:\Users\DELL\PycharmProjects\PythonProject\Facebook\fbLogin.robot">
+<test id="s1-t1" name="Login to Facebook" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-19T23:53:45.918851" level="INFO">Opening browser 'Chrome' to base url 'https://facebook.com//'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-19T23:53:45.918851" elapsed="2.762545"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-02-19T23:53:48.682822" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000002596B90D190&gt;</msg>
+<var>${options}</var>
+<arg>sys.modules['selenium.webdriver.chrome.options'].Options()</arg>
+<arg>sys</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-02-19T23:53:48.682688" elapsed="0.000134"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-notifications</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2024-02-19T23:53:48.683820" elapsed="0.000000"/>
+</kw>
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-02-19T23:53:48.686944" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg time="2024-02-19T23:53:50.322154" level="INFO">${driver} = 2</msg>
+<var>${driver}</var>
+<arg>${browser}</arg>
+<arg>options=${options}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-02-19T23:53:48.686244" elapsed="1.635910"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-02-19T23:53:50.324333" level="INFO">Opening url 'https://facebook.com'</msg>
+<arg>https://facebook.com</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-02-19T23:53:50.323154" elapsed="1.020110"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-19T23:53:51.344260" elapsed="0.117131"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-19T23:53:51.461391" level="INFO">Typing text 'akkikarn20@gmail.com' into text field 'id:email'.</msg>
+<arg>id:email</arg>
+<arg>akkikarn20@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-19T23:53:51.461391" elapsed="0.166323"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-19T23:53:51.628770" level="INFO">Typing text 'Password@123' into text field 'id:pass'.</msg>
+<arg>id:pass</arg>
+<arg>Password@123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-19T23:53:51.627714" elapsed="0.119511"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-19T23:53:51.749836" level="INFO">Clicking element 'xpath://button[@data-testid='royal_login_button']'.</msg>
+<arg>xpath://button[@data-testid='royal_login_button']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-19T23:53:51.749332" elapsed="0.054009"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-19T23:54:11.804365" level="INFO">Slept 20 seconds.</msg>
+<arg>20s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-19T23:53:51.803341" elapsed="20.001024"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-19T23:54:11.805441" elapsed="2.258885"/>
+</kw>
+<status status="PASS" start="2024-02-19T23:53:45.917756" elapsed="28.147694"/>
+</test>
+<status status="PASS" start="2024-02-19T23:53:45.727852" elapsed="28.339731"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="fbLogin">fbLogin</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
